@@ -46,5 +46,7 @@ select id,name,sum(salary) from a group by name;
 
 
 
+select id,name,salary, (select avg(salary) from a) from a;
 
 
+select cid,city,count(*)as cnt from b group by cid;
